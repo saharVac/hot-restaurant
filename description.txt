@@ -1,0 +1,38 @@
+Front End
+  - Bootstrap
+
+  - Container
+
+  - Main page:
+    - view tables button
+    - make reservation button
+    - Title, header, current reservation in body
+
+Functionality 
+  - View Tables
+    - showcase tables already booked and tables left
+  - Make reservation
+    - Form
+  - Waitlist
+
+Server
+  - npm init
+  - npm i express
+  - npm i nodemon
+  - objects array 
+    - empty at first
+    - populated by info from Form
+    - current reservations array
+    - Waitlist array
+  - basic express.js Server
+    - dependencies: express, path
+    - var app = express();
+    - establish port
+    - set up express app for data parsing
+      - app.post
+    
+data
+  - ID
+  - Name
+  - Email
+  - Phone
