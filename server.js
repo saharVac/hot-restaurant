@@ -39,8 +39,6 @@ app.get("/api/reservations", function(req, res) {
 app.post("/api/reservations", function(req, res) {
   var reservation = req.body;
 
-  // Using a RegEx Pattern to remove spaces from reservations
-  // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
   reservations.routeName = reservations.name.replace(/\s+/g, "").toLowerCase();
 
   console.log(reservations);
