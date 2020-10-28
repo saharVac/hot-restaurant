@@ -32,12 +32,12 @@ app.get("/tables", function(req, res) {
 });
 
 // DISPLAY RESERVATIONS
-app.get("/api/reservations", function(req, res) {
+app.get("/api/tables", function(req, res) {
   return res.json(reservations);
 });
 
 // MAKING RESERVATION
-app.post("/api/reservations", function(req, res) {
+app.post("/api/tables", function(req, res) {
   var reservation = req.body;
 
   reservations.routeName = reservations.name.replace(/\s+/g, "").toLowerCase();
