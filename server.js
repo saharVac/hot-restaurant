@@ -40,11 +40,11 @@ app.get("/api/tables", function(req, res) {
 app.post("/api/tables", function(req, res) {
   var reservation = req.body;
 
-  reservations.routeName = reservations.name.replace(/\s+/g, "").toLowerCase();
+  reservation.routeName = reservation.name.replace(/\s+/g, "").toLowerCase();
 
-  console.log(reservations);
+  console.log(reservation);
 
-  characters.push(reservations);
+  reservations.push(reservation);
 
   res.json(reservations);
 });
