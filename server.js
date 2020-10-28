@@ -16,6 +16,7 @@ var reservations = [];
 //   - Name
 //   - Email
 //   - Phone
+var waitList = []
 
 // ROUTES
 app.get("/", function(req, res) {
@@ -26,8 +27,8 @@ app.get("/addRes", function(req, res) {
   res.sendFile(path.join(__dirname, "addRes.html"));
 });
 
-app.get("/view", function(req, res) {
-  res.sendFile(path.join(__dirname, "view.html"));
+app.get("/tables", function(req, res) {
+  res.sendFile(path.join(__dirname, "tables.html"));
 });
 
 // DISPLAY RESERVATIONS
