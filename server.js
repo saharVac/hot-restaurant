@@ -16,6 +16,7 @@ var reservations = [];
 //   - Name
 //   - Email
 //   - Phone
+var waitList = []
 
 // ROUTES
 app.get("/", function(req, res) {
